@@ -9,33 +9,25 @@ define([
   
   var AppRouter = Backbone.Router.extend({
     routes: {
-      // Define some URL routes
       'home': 'showHome',
-      
-      // Default
+      // Default route
       '*actions': 'default'
     }
   });
   
   var initialize = function(){
-
     console.log('Router initialized');
 
     var appRouter = new AppRouter;
     
     appRouter.on('route:showHome', function(){
-   
-        // Call render on the module we loaded in via the dependency array
-        var homeView = new HomeView();
-        homeView.render();
-
+      var homeView = new HomeView();
+      homeView.render();
     });
 
-    appRouter.on('route:default', function (actions) {
-     
-       // We have no matching route, lets display the home page 
-        var homeView = new HomeView();
-        homeView.render();
+    appRouter.on('route:default', function (actions) {     
+      var homeView = new HomeView();
+      homeView.render();
     });
 
     Backbone.history.start({ pushState: true});

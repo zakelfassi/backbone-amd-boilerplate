@@ -10,7 +10,7 @@ define([
 ], function($, _, Backbone, App, Apps, homeTemplate){
 
   var HomeView = Backbone.View.extend({
-    el: $("body"),
+    el: $("#replace-me"),
     render: function(){
       console.log('HomeView rendered');
 

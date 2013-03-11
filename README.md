@@ -8,10 +8,10 @@ Just to get you started using Backbone-AMD (using RequireJS).
 Assuming [NodeJS](http://nodejs.org) installed;
 
 1. Install [Bower](https://github.com/twitter/bower), a dependency management tool, by running
-    npm install bower
+  `npm install bower`
 2. Install RequireJS (for build purposes using r.js - you might also need r.js separately)
-    npm install requirejs
-    nom install rjs
+  `npm install requirejs`
+  `npm install rjs`
 3. Run `bower install` on the project's root folder to install JQuery, Backbone, Underscore, RequireJS and TextJS.
 
 

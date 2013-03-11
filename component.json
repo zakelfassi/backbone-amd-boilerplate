@@ -1,0 +1,12 @@
+{
+  "name": "Backbone-AMD boilerplate",
+  "author": "zakelfassi",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": null,
+    "backbone-amd": null,
+    "underscore-amd": null,
+    "requirejs": null,
+    "text": null
+  }
+}
